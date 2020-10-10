@@ -1,3 +1,10 @@
+h1 {
+  font-family: "PT Serif", serif;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 body {
   margin: 0;
 }
@@ -27,11 +34,4 @@ body {
 
 .menu__item:last-child {
   padding-right: 0;
-}
-
-h1 {
-  font-family: "PT Serif", serif;
-}
-p {
-  font-family: "Roboto", sans-serif;
 }
