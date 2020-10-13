@@ -26,6 +26,7 @@ body {
   transform: translateY(-50%);
   width: 28px;
   height: 28px;
+  border-radius: 50%;
   opacity: .7;
 }
 
