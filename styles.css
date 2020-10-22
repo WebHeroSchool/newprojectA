@@ -10,6 +10,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .logo {
@@ -80,10 +81,36 @@ body {
   width: 100%;
 }
 
-h1 {
-  font-family: "PT Serif", serif;
+.main {
+  padding: 0 63% 100px 0;
+  background: top right no-repeat url(img/mainimg.svg);
 }
 
-p {
-  font-family: "Roboto", sans-serif;
+.main__title {
+  margin: 0 0 40px 0;
+  font: bold 50px/65px "pt_serifbold", arial, helvetica, sans-serif;
+}
+
+.main__title-text_highlight {
+  background: #ecf3ff;
+}
+
+.main__subtitle {
+  margin: 0 0 41px 0;
+  font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
+}
+
+.main__button {
+  display: inline-block;
+  font: 14px/16px "Roboto", arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056ec;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
 }
