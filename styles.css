@@ -83,7 +83,15 @@ body {
 
 .main {
   padding: 0 63% 206px 0;
-  background: top right no-repeat url(img/mainimg.svg);
+}
+
+.main__image {
+  position: absolute;
+  width: 770px;
+  height: 657px;
+  top: 242px;
+  left: 953px;
+  background: no-repeat url(img/mainimg.svg);
 }
 
 .main__title {
@@ -113,4 +121,34 @@ body {
 
 .main__button:hover {
   opacity: .5;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 28px;
+  }
+
+  .main {
+    text-align: center;
+    padding: 74% 0 0;
+    background-size: 74%;
+    background-position: top center;
+  }
+  .main__title {
+    margin-bottom: 44px;
+    font: bold 30px/39px "pt_serifbold", arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin-bottom: 25px;
+    font: 500 14px/19px "Roboto", arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    font: 500 14px/16px "Roboto", arial, helvetica, sans-serif;
+  }
 }
