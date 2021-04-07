@@ -100,15 +100,24 @@ body {
 }
 
 .main__title-text_highlight {
-  background: #ecf3ff;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 15%, #ecf3ff 15%);
 }
 
 .main__subtitle {
+  position: absolute;
   margin: 0 0 41px 0;
+  width: 455px;
+  height: 52px;
+  top: 613px;
+  left: 195px;
   font: 400 22px/26px "Roboto", arial, helvetica, sans-serif;
 }
 
 .main__button {
+  position: absolute;
+  width: 229px;
+  top: 706px;
+  left: 196px;
   display: inline-block;
   font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
   color: #fff;
@@ -138,7 +147,7 @@ body {
     background-size: 74%;
     background-position: top center;
   }
-  
+
   .main__title {
     margin-bottom: 44px;
     font: bold 30px/39px "pt_serifbold", arial, helvetica, sans-serif;
