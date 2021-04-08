@@ -10,6 +10,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 206px;
+  margin-left: 4px;
 }
 
 .logo {
@@ -43,12 +45,13 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  margin: 0 14px 0 0;
+  margin: 4px 14px 0 0;
 }
 
 .menu__item {
   position: relative;
   margin-right: 26px;
+  left: 4px;
   font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -56,6 +59,7 @@ body {
 
 .menu__item:last-child {
   margin-right: 0;
+  left: 4px;
 }
 
 .menu__item::after {
@@ -80,10 +84,84 @@ body {
   width: 100%;
 }
 
-h1 {
-  font-family: "PT Serif", serif;
+.main {
+  padding: 0 63% 206px 0;
 }
 
-p {
-  font-family: "Roboto", sans-serif;
+.main__image {
+  position: absolute;
+  width: 770px;
+  height: 657px;
+  top: 242px;
+  left: 953px;
+  background: no-repeat url(img/mainimg.svg);
+}
+
+.main__title {
+  margin: 0 0 40px 4px;
+  font: bold 66px/87px "pt_serifbold", arial, helvetica, sans-serif;
+}
+
+.main__title-text_highlight {
+  background: linear-gradient(180deg, rgb(255, 255, 255) 15%, #ecf3ff 15%);
+}
+
+.main__subtitle {
+  position: absolute;
+  margin: 0 0 41px 0;
+  width: 455px;
+  height: 52px;
+  top: 613px;
+  left: 195px;
+  font: 400 22px/26px "Roboto", arial, helvetica, sans-serif;
+}
+
+.main__button {
+  position: absolute;
+  width: 229px;
+  top: 706px;
+  left: 196px;
+  display: inline-block;
+  font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056ec;
+  padding: 18px 21px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .header {
+    margin-bottom: 28px;
+  }
+
+  .main {
+    text-align: center;
+    padding: 74% 0 0;
+    background-size: 74%;
+    background-position: top center;
+  }
+
+  .main__title {
+    margin-bottom: 44px;
+    font: bold 30px/39px "pt_serifbold", arial, helvetica, sans-serif;
+  }
+
+  .main__subtitle {
+    margin-bottom: 25px;
+    font: 500 14px/19px "Roboto", arial, helvetica, sans-serif;
+  }
+
+  .main__button {
+    font: 500 14px/16px "Roboto", arial, helvetica, sans-serif;
+  }
 }
